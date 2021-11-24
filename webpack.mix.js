@@ -1,4 +1,4 @@
-const mix = require('laravel-mix')
+const mix = require('laravel-mix');
 
 // const THEME_DIR = './wp-content/themes/Template'
 
@@ -10,7 +10,7 @@ mix
     postCss: [require('tailwindcss')],
   })
   .browserSync({
-    proxy: 'http://test.local/',
+    proxy: 'http://wptest.local',
     files: [`./**/*.php`, `./**/*.js`, `./**/*.css`],
     notify: false,
   });
